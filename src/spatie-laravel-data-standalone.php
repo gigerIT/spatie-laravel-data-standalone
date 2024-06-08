@@ -207,30 +207,6 @@ if (!function_exists('config')) {
     }
 }
 
-if (!function_exists('array_get')) {
-    function array_get($array, $key, $default = null)
-    {
-        if (!is_array($array) || $key === null) {
-            return $default;
-        }
-
-        if (array_key_exists($key, $array)) {
-            return $array[$key];
-        }
-
-        $keys = explode('.', $key);
-        foreach ($keys as $segment) {
-            if (is_array($array) && array_key_exists($segment, $array)) {
-                $array = $array[$segment];
-            } else {
-                return $default;
-            }
-        }
-
-        return $array;
-    }
-}
-
 if (!function_exists('app')) {
     function app($abstract = null, array $parameters = [])
     {
