@@ -1,2 +1,21 @@
 {
+  "name": "gigerit/spatie-laravel-data-standalone",
+  "description": "A standalone version of the spatie/laravel-data package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "gigerIT"
+    }
+  ],
+  "require": {
+    "saloonphp/saloon": "^3.0",
+    "illuminate/container": "^11.9",
+    "spatie/laravel-data": "^4.6"
+  },
+  "autoload": {
+    "files": [
+      "src/spatie-laravel-data-standalone.php"
+    ]
+  }
 }
