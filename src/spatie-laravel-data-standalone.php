@@ -55,7 +55,7 @@ if (!function_exists('config')) {
                     'casts' => [
                         DateTimeInterface::class => Spatie\LaravelData\Casts\DateTimeInterfaceCast::class,
                         BackedEnum::class => Spatie\LaravelData\Casts\EnumCast::class,
-//        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
+                        //        Enumerable::class => Spatie\LaravelData\Casts\EnumerableCast::class,
                     ],
 
                     /**
@@ -130,7 +130,7 @@ if (!function_exists('config')) {
                      * method. By default, only when a request is passed the data is being validated. This
                      * behaviour can be changed to always validate or to completely disable validation.
                      */
-                    'validation_strategy' => \Spatie\LaravelData\Support\Creation\ValidationStrategy::OnlyRequests->value,
+                    'validation_strategy' => \Spatie\LaravelData\Support\Creation\ValidationStrategy::Always->value,
 
                     /**
                      * When using an invalid include, exclude, only or except partial, the package will
