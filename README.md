@@ -1,10 +1,10 @@
 # Use <a href="https://github.com/spatie/laravel-data">Spatie's Laravel Data</a> Standalone (outside Laravel)
 
-This helper package imitates all the features of Laravel laravel-data needs to run.
+This helper package imitates all Laravel features laravel-data needs to run.
 
 ## Installation
 
-You can install the package via composer:
+Once you have installed laravel-data, simply install this package in any non Laravel PHP project, and you'll be able to use laravel-data.
 
 ```bash
 composer require gigerit/spatie-laravel-data-standalone
