@@ -133,6 +133,16 @@ if (!function_exists('config')) {
                     'validation_strategy' => \Spatie\LaravelData\Support\Creation\ValidationStrategy::OnlyRequests->value,
 
                     /**
+                     * A data object can map the names of its properties when transforming (output) or when
+                     * creating (input). By default, the package will not map any names. You can set a
+                     * global strategy here, or override it on a specific data object.
+                     */
+                    'name_mapping_strategy' => [
+                        'input' => null,
+                        'output' => null,
+                    ],
+
+                    /**
                      * When using an invalid include, exclude, only or except partial, the package will
                      * throw an exception. You can disable this behaviour by setting this option to true.
                      */
