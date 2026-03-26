@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "illuminate/container": "^11|^12",
+    "illuminate/container": "^11|^12|^13",
     "spatie/laravel-data": "^4.6"
   },
   "autoload": {
